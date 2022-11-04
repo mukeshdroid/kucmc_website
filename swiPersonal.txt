@@ -28,3 +28,4 @@ to ensure you your local repo is using the correct version
 It's because lol ruby 3.x doesn't have webrick (https://github.com/github/pages-gem/issues/752#issuecomment-877780567)
 hence. install ruby 2.7.x
 
+//checking if sabal error removed
