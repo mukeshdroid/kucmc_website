@@ -80,66 +80,10 @@
             {{tests.type}}
           {%- endif -%}
         {% endfor %} -->
-        {%assign bglink="https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb" %}
-        {%assign bglink2 = ".../assets/img/team/member1.png"%}
-        <div class="row services-row services-row-head services-row-1 centerflipcards">
-          <div class="square-flip services-group wow animated fadeInLeft col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-            <div class='square' data-image=".../assets/img/team/member1.png">
-              <div class="square-container">
-                <div class="align-center"><img src="" class="boxshadow" style="object-fit:cover;object-position: center;" alt=""></div>
-                <h2 class="textshadow">Kallyas Wp Theme</h2>
-                <h3 class="textshadow">The #1 Selling Most Enjoyable and Creative Multipurpose WordPress theme.</h3>
-              </div>
-              <div class="flip-overlay"></div>
-            </div>
-            <div class='square2' data-image={{bglink}}>
-              <div class="square-container2">
-                <div class="align-center"></div>
-                <h2>#1 Front-end Visual Website Builder in 2016</h2>
-              </div>
-              <div class="flip-overlay"></div>
-            </div>
-          </div>
 
-          <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-            <div class='square' data-image={{bglink}}>
-              <div class="square-container">
-                <div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas2.png" class="boxshadow" alt=""></div>
-                <h2 class="textshadow">Kallyas WordPress Theme</h2>
-                <h3 class="textshadow">The #1 Selling Most Enjoyable and Creative Multipurpose WordPress theme.</h3>
-              </div>
-              <div class="flip-overlay"></div>
-            </div>
-            <div class='square2' data-image={{bglink}}>
-              <div class="square-container2">
-                <div class="align-center"></div>
-                <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View Demos</a>
-              </div>
-              <div class="flip-overlay"></div>
-            </div>
-          </div>
 
-          <div class="square-flip services-group wow animated fadeInRight col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-            <div class='square' data-image={{bglink}}>
-              <div class="square-container">
-                <div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas2.png" class="boxshadow" alt=""></div>
-                <h2 class="textshadow">Kallyas WordPress Theme</h2>
-                <h3 class="textshadow">The #1 Selling Most Enjoyable and Creative Multipurpose WordPress theme.</h3>
-              </div>
-              <div class="flip-overlay"></div>
-            </div>
-            <div class='square2' data-image={{bglink}}>
-              <div class="square-container2">
-                <div class="align-center"></div>
-                <h2>The only theme you'll ever need. No codding skills needed.</h2>
-              </div>
-              <div class="flip-overlay"></div>
-            </div>
-          </div>
-        </div>
-
-         <!-- Begin Services Row 1 -->
-        <div class="row services-row services-row-head services-row-2">
+        <!-- Begin Services Row 1 -->
+        <div class="row services-row services-row-head services-row-1">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
               <p class="services-icon">

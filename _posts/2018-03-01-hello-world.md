@@ -12,5 +12,6 @@ label_success: "blog"
 label_info: "personal"
 label_warning: "warning"
 label_danger: "danger"
+type: "post"
 ---
 
