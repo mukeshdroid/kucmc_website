@@ -1,14 +1,15 @@
 <!-- Footer -->
-<footer> 
+<footer>
   <div class="container">
     <div class="row">
       <div class="col-md-4">
         <h3><i class="fa fa-map-marker"></i> Contact:</h3>
         <p class="footer-contact">
-          {{ site.company_name }} <br>
-          Phone: {{ site.telephone_number }} <br>
-          Fax: {{ site.fax_number }} <br>
-          Email: {{ site.company_email }}<br>
+          {%assign mailto ="mailto:" |append:site.company_email%}
+          <i class="fa-sm fa fa-envelope"></i>
+          <a href={{mailto }}>{{ site.company_email }}</a> <br>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          {{ site.address_line }}<br>
         </p>
       </div>
       <div class="col-md-4">
@@ -17,7 +18,7 @@
         <p><a href="/about"> Services ( What we do )</a></p>
         <p><a href="/contact"> Contact ( Feel free to contact )</a></p>
         <p><a href="/blog"> Blog ( Write to us )</a></p>
-        <p><a href="/team"> Team ( Meet the Team )</a></p> 
+        <p><a href="/team"> Team ( Meet the Team )</a></p>
       </div>
       <div class="col-md-4">
         <h3><i class="fa fa-heart"></i> Socialize</h3>
@@ -46,7 +47,7 @@
             </a>
           {% endif %}
         </div>
-      </div>    
+      </div>
     </div>
   </div>
 
