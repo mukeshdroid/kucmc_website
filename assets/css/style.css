@@ -16,6 +16,37 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 * ==========================================================================
 */
 
+.caption{
+  font-size: x-large;
+  color: #EEA236;
+	z-index: 1;
+	position: relative;	
+}
+
+hr.dashed {
+  border-top: 3px dashed #528C7C;
+}
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
 .btn-primary{
   margin-left: 20px;
 }
