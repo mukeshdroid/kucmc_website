@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Testimonial Revolution has begun!"
-description: "'I am bound to Tahiti for more men.'"
-picture: HOD.png
+title: "Project Revolution has begun!"
+description: "'I am bound to Tahiti for more men.'
+'Very good. Let me board you a moment—I come in peace.' With that he leaped from the canoe, swam to the boat; and climbing the gunwale, stood face to face with the captain."
+picture: img3.jpg
 
 label_default: "alice"
 label_primary: "story"
@@ -11,8 +12,8 @@ label_info: "personal"
 label_warning: "warning"
 label_danger:
 
-type: "testimonial"
-author: "Head of Department, Department of Mathematics"
+type: "project"
+author: "Swi Swi, 1st/1st CM"
 ---
 Welcome to the Department of Mathematics, School of Science, Kathmandu University. If you are prospective students expecting your field of study in science and its applications in real life, this is the right place.
 
