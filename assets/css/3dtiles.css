@@ -245,9 +245,10 @@ transform: translateY(-50%) translateX(0px)  scale(1);
 
     /*You can delete this style*/
     .centerflipcards{
-  display:flex;
+        display:flex;
         /* width:1330px;
-  height:440px; */
+            height:440px; */
+        flex-wrap: wrap;
         text-align:center;
         margin:0 auto;
         margin-top:25px;

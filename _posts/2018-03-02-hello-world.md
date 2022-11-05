@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Revolution has begun!"
 description: "'I am bound to Tahiti for more men.'
 'Very good. Let me board you a moment—I come in peace.' With that he leaped from the canoe, swam to the boat; and climbing the gunwale, stood face to face with the captain.

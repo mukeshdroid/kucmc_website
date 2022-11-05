@@ -234,6 +234,7 @@ address {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
+  z-index: 1;
 }
 /*
 * ==========================================================================
@@ -372,8 +373,11 @@ p.blog-text{
 
 .office-logo {
   width: 100px;
+  opacity:0.4;
 }
-
+.office-logo:hover {
+  opacity:1;
+}
 @media (max-width: 768px){
     .office-logo{
       height: 100px;
