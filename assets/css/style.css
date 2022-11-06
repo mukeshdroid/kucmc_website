@@ -437,6 +437,14 @@ p.blog-text{
   margin-bottom: 50px;
   font-size: 25px;
 }
+.services-section .services-header em{
+  color: #9caead;
+  background-color: #ffffff;
+  text-shadow: 0px 1px;
+}
+.services-section .services-header em:hover{
+  color:#8da09f;
+}
 .services-section .services-header .services-header-title {
   margin-bottom: 15px;
 }
