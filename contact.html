@@ -13,14 +13,16 @@ published: true
     </div>
     <div class="container">
       <div class="col-lg-4">
-        <h4>Find us at:</h4>
-
-        <p class="block-author">{{ site.company_name }}</p>
-        <p>{{ site.address_line }}</p>
-        <p>Phone: {{ site.telephone_number }}</p>
-        <p>Fax: {{ site.fax_number }}</p>
-
-        <em class="block-author">Email: {{ site.company_email }}</em> <br>
+        <h2 class="block-author">Find us at:</h2>
+        <p><strong>Address</strong><br>
+          Block 06, Central Campus, Kathmandu University<br>
+          {{ site.address_line }}<br>
+          Nepal
+        </p>
+        <p><strong>Email</strong><br>
+          {%assign mailto ="mailto:" |append:site.company_email%}
+          <i class="fa-sm fa fa-envelope"></i>
+          <a href={{mailto }}>{{ site.company_email }}</a> <br></p>
         <br>
         <!-- p class="lead">Social Link</p><hr>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -41,7 +43,7 @@ published: true
         <div class="feedback-form">
 
           <div id="contact-response"></div>
-          
+
           <form action="http://templates.designorbital.com/baleen/contact.php" method="post" id="contact-form">
             <fieldset>
               <div class="form-group form-group-fullname">
@@ -55,15 +57,15 @@ published: true
               <div class="form-group form-group-message">
                 <label class="control-label" for="message">MESSAGE *</label>
                 <textarea class="form-control" name="message" id="message" rows="3"></textarea>
-              </div>           
+              </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
           </form>
-          
-        </div> 
+
+        </div>
       </div>
     </div>
   </div>
-</div>    
-    
+</div>
+
 <!--End Main Container -->

@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta data & title -->
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="">
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="../../../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../../assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/3dtiles.css">
+    <script type="text/javascript" src="../../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../../js/wow.min.js"></script>
+    <script src="../../../js/3dtiles.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </head>
+  <body>
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand wow fadeInDownBig" href="../../../index.html"><img class="office-logo" src="../../../assets/img/slider/KUCMC_logo.png" alt="Office"></a>
+        </div>
+
+        <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active">
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="../../../about.html">About</a>
+            </li>
+            <li>
+              <a href="../../../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../../../team.html">Team</a>
+            </li>
+            <li>
+              <a href="../../../contact.html"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    {% assign post = page %}
+    <div class="blog-post" style="margin:5%;">
+        <h1 class="blog-title">
+          <i class="fa fa-file-text"></i>
+          {{ post.title }}
+        </h1>
+        <br>
+
+        <img src="/assets/img/slider/{{ post.picture }}" alt="Feature-img" width="100%" class="blog-image">
+        <br>
+        <p>{{ content }}</p>
+        <span class="badge">{{ post.date | date: '%B %d, %Y' }}</span>
+        <div class="pull-right">
+          {% if post.label_default %}
+            <span class="label label-default">{{ post.label_default }}</span>
+          {% endif %}
+
+          {% if post.label_primary %}
+            <span class="label label-primary">{{ post.label_primary }}</span>
+          {% endif %}
+
+          {% if post.label_success %}
+            <span class="label label-success">{{ post.label_success }}</span>
+          {% endif %}
+
+          {% if post.label_info %}
+            <span class="label label-info">{{ post.label_info }}</span>
+          {% endif %}
+
+          {% if post.label_warning %}
+            <span class="label label-warning">{{ post.label_warning }}</span>
+          {% endif %}
+
+          {% if post.label_danger %}
+            <span class="label label-danger">{{ post.label_danger }}</span>
+          {% endif %}
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+    <footer>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+            <p class="footer-contact">
+                {%assign mailto ="mailto:" |append:site.company_email%}
+                <i class="fa-sm fa fa-envelope"></i>
+                <a href={{mailto }}>{{ site.company_email }}</a> <br>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                {{ site.address_line }}<br>
+            </p>
+            </div>
+            <div class="col-md-4">
+            <h3><i class="fa fa-external-link"></i> Links</h3>
+            <p><a href="/about"> About ( Who we are )</a></p>
+            <p><a href="/about"> Services ( What we do )</a></p>
+            <p><a href="/contact"> Contact ( Feel free to contact )</a></p>
+            <p><a href="/blog"> Blog ( Write to us )</a></p>
+            <p><a href="/team"> Team ( Meet the Team )</a></p>
+            </div>
+            <div class="col-md-4">
+            <h3><i class="fa fa-heart"></i> Socialize</h3>
+            <div id="social-icons">
+                {% if site.googleplus_link %}
+                <a href="{{ site.googleplus_link }}" class="btn-group google-plus">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                {% endif %}
+
+                {% if site.linkedin_link %}
+                <a href="{{ site.linkedin_link }}" class="btn-group linkedin">
+                    <i class="fa fa-linkedin-square"></i>
+                </a>
+                {% endif %}
+
+                {% if site.facebook_link %}
+                <a href="{{ site.twitter_link }}" class="btn-group twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                {% endif %}
+
+                {% if site.facebook_link %}
+                <a href="{{ site.facebook_link }}" class="btn-group facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                {% endif %}
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="copyright text center">
+        <p>&copy; Copyright {{ site.time | date: '%Y' }}, <a href="#">Your Website Link</a>. <br>Theme ported by <a href="https://melvinchng.github.io/" target="_blank">Melvin Ch'ng</a></p>
+        </div>
+    </footer>
+  </body>
+
+
+
+</html>
+
+

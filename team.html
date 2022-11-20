@@ -2,202 +2,90 @@
 layout: default_style
 permalink: /team
 ---
+<!--
+  Previous Committee Members
+  Founding Committee Members
+ -->
 
-<!-- Main Container -->
-<div id="banners"></div>
-<div class="container">
+{%- for board in site.data.boardlist.boards -%}
+  {%- for item in board-%}
+    <div class="banners">
+        <h1>
+          {{item.boardname}}
+        </h1>
+    </div>
+    <div class="container team">
+      <div class="row team">
+        {%- for member in item.Members -%}
+          {%- if forloop.index < 6 -%}
+            {%- assign class = "col-md-4  team" -%}
+            {%- if forloop.index>1 -%}
+              {% assign class="col-lg-2 team" %}
+            {%- endif -%}
+            <div class="{{class}} " >
+              <div class="square pull-left">
+                <img src={{member.imglink}} alt="Feature-img">
+              </div>
+              <h4>{{member.name}}</h4>
+              <p>{{member.post}} </p>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <div class="row team">
+        {%- for member in item.Members -%}
+          {%- if forloop.index > 5 -%}
+            <div class="col-lg-2 team" >
+              <div class="square pull-left">
+                <img src={{member.imglink}} alt="Feature-img">
+              </div>
+              <h4>{{member.name}}</h4>
+              <p>{{member.post}} </p>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+
+  {%- endfor -%}
+  <hr class ="dashed">
+{%- endfor -%}
+<!-- <div class="container team">
         <h1>
           Current Committee Members
         </h1>
 </div>
-<!--End Main Container -->
-
-<!-- Main Container -->
-
-<div id="banners"></div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-     
-        <div class="square pull-left">
-          <img src="../assets/img/team/muku.jpeg" alt="Feature-img" height="300" width="300">
-        </div>
-       
-        <h4>
-            Mukesh Tiwari
-          </h4>
-          <p>
-           President
-          </p>
-      
-      </div>
-      
-      
-      
-     
- 
-  <div class="col-lg-2">
-    
-      <div class="square pull-left">
-        <img src="../assets/img/team/ayam.jpg" alt="Feature-img" height="200" width="180">
-      </div>
-      <h4>
-        Ayam Basyal
-      </h4>
-      <p>
-       Vice-President
-      </p>
-    
-</div>
-    <div class="col-lg-2">
-     
-        <div class="square pull-left">
-          <img src="../assets/img/team/pri.jpeg" alt="Feature-img" height="200" width="180">
-        </div>
-        <h4>
-          Priyanka Panta
-        </h4>
-        <p>
-         General Secretary
-        </p>
-     
-      </div>
-      <div class="col-lg-2">
-        
+<div class="container team">
+  <div class="row team">
+    {%- for member in site.data.board2022.board1.Members -%}
+      {%- if forloop.index < 6 -%}
+        {%- assign class = "col-md-4  team" -%}
+        {%- if forloop.index>1 -%}
+          {% assign class="col-lg-2 team" %}
+        {%- endif -%}
+        <div class="{{class}} " >
           <div class="square pull-left">
-            <img src="../assets/img/team/ruby.jpg" alt="Feature-img" height="200" width="180">
+            <img src={{member.imglink}} alt="Feature-img">
           </div>
-          <h4>
-            Ruby Shrestha
-          </h4>
-          <p>
-           Club Secretary
-          </p>
-       
+          <h4>{{member.name}}</h4>
+          <p>{{member.post}} </p>
         </div>
-        <div class="col-lg-2">
-        
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+  <div class="row team">
+    {%- for member in site.data.board2022.board1.Members -%}
+      {%- if forloop.index > 5 -%}
+        <div class="col-lg-2 team" >
           <div class="square pull-left">
-            <img src="../assets/img/team/supriya.jpg" alt="Feature-img" height="200" width="180">
+            <img src={{member.imglink}} alt="Feature-img">
           </div>
-          <h4>
-            Supriya Baniya
-          </h4>
-          <p>
-           Treasurer
-          </p>
-       
+          <h4>{{member.name}}</h4>
+          <p>{{member.post}} </p>
         </div>
-  
-    
-    </div>
+      {%- endif -%}
+    {%- endfor -%}
   </div>
 </div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-2">
-    
-      <div class="square pull-left">
-        <img src="../assets/img/team/Anisha.jpg" alt="Feature-img" height="160" width="160">
-      </div>
-      <h4>
-        Anisha Lamsal
-      </h4>
-      <p>
-       Executive Member
-      </p>
-    
-</div>
-    <div class="col-lg-2">
-     
-        <div class="square pull-left">
-          <img src="../assets/img/team/bses.jpg" alt="Feature-img" height="160" width="160">
-        </div>
-       
-        <h4>
-            Bishesh Kafle
-          </h4>
-          <p>
-           Executive Member
-          </p>
-      
-      </div>
-      <div class="col-lg-2">
-    
-        <div class="square pull-left">
-          <img src="../assets/img/team/prastut.jpg" alt="Feature-img" height="160" width="160">
-        </div>
-        <h4>
-          Prastut Bhattarai
-        </h4>
-        <p>
-         Executive Member
-        </p>
-      
-  </div> 
-      
-      
-     
- 
-  <div class="col-lg-2">
-    
-      <div class="square pull-left">
-        <img src="../assets/img/team/member1.png" alt="Feature-img" height="160" width="160">
-      </div>
-      <h4>
-        Subodh Paudel
-      </h4>
-      <p>
-       Executive Member
-      </p>
-    
-</div>
-    <div class="col-lg-2">
-     
-        <div class="square pull-left">
-          <img src="../assets/img/team/pratikshya.jpg" alt="Feature-img" height="160" width="160">
-        </div>
-        <h4>
-          Pratishya Shrestha
-        </h4>
-        <p>
-         Executive Member
-        </p>
-     
-      </div>
-      <div class="col-lg-2">
-        
-          <div class="square pull-left">
-            <img src="../assets/img/team/susmita.jpg" alt="Feature-img" height="160" width="160">
-          </div>
-          <h4>
-            Susmita Sharma
-          </h4>
-          <p>
-           Executive Member
-          </p>
-       
-        </div>
-       
-    
-    </div>
-  </div>
-</div>
-<!--End Main Container -->
-
-<hr class ="dashed">
-
-<!-- Main Container -->
-<div id="banners"></div>
-<div class="container">
-        
-          <a href="#anchor3">Founding KUCMC Committee</a><br>
-          <a href="#anchor4">KUCMC Committee 2021-22</a><br>
-          <a href="#anchor5">KUCMC Committee 2020-21</a><br>
-      
-</div>
-
-
-<!--End Main Container -->
-
+<hr class ="dashed"> -->

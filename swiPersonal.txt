@@ -1,0 +1,30 @@
+How errors well handled!!
+
+1. Bundler Version error
+via- https://stackoverflow.com/a/67287741
+"""
+You need to do the following to ensure the correct default version of Bundler is used for the repo you are working with.
+
+You can run the following but this can present issues as it can break your local gems on your system as ALL of them are updated.
+
+gem update --system
+The following method is a much safer way of ensuring Bundler is updated
+
+Get your gem environment and take note of INSTALLATION_DIRECTORY
+gem environment
+Then run the following
+cd <INSTALLATION DIRECTORY>/specifications/default
+rm bundler-<old_default_version>.gemspec
+gem install --default bundler -v <new_default_version>
+If you have followed 2 and that still does not work, then run
+gem install bundler:<new_default_version>
+to ensure you your local repo is using the correct version
+
+"""
+
+
+2. Parser error
+// internet says to add webrick but it doesn't work
+It's because lol ruby 3.x doesn't have webrick (https://github.com/github/pages-gem/issues/752#issuecomment-877780567)
+hence. install ruby 2.7.x
+
