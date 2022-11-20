@@ -15,6 +15,36 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 * Global
 * ==========================================================================
 */
+.caption{
+  font-size: x-large;
+  color: #EEA236;
+	z-index: 1;
+	position: relative;
+}
+
+hr.dashed {
+  border-top: 3px dashed #528C7C;
+}
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
 
 .btn-primary{
   margin-left: 20px;
@@ -52,7 +82,57 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   margin-right: auto;
   margin-left: auto;
 }
-
+/* For team Page extra by Swi */
+.container.team{
+  width: 1100px;
+}
+.row.team{
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.col-md-4.team{
+  height: 271px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 2%;
+}
+.col-md-4.team img{
+  height: 210px;
+  width: 160px;
+}
+.row.team img{
+  object-fit: cover;
+  position: relative;
+  object-position: center;
+  height: 200px;
+  width: 150px;
+}
+.row.team h4{
+  width: 150px;
+  text-align: center;
+}
+.row.team p{
+  width: 150px;
+  text-align: center;
+}
+.col-lg-2.team{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: space-around;
+  width: 150px;
+  height: 266px;
+  flex-direction: column;
+}
 
 @media (min-width: 1068px) and (max-width: 1400px) {
  .post-sidebar{
