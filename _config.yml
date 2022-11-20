@@ -30,9 +30,12 @@ google_map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.794270038
 
 # Social Link
 facebook_link: https://www.facebook.com/kucmc1
+insta_link: https://www.instagram.com/kucmc.official/
+tiktok_link: https://www.tiktok.com/@math_ku
 twitter_link: http://www.twitter.com
 linkedin_link: http://www.linkedin.com
 googleplus_link: http://plus.google.com
+
 
 # Build settings
 markdown: kramdown
