@@ -8,48 +8,82 @@ permalink: /team
  -->
 
 {%- for board in site.data.boardlist.boards -%}
-  {%- for item in board-%}
-    <div class="banners">
-        <h1>
-          {{item.boardname}}
-        </h1>
-    </div>
-    <div class="container team">
-      <div class="row team">
-        {%- for member in item.Members -%}
-          {%- if forloop.index < 6 -%}
-            {%- assign class = "col-md-4  team" -%}
-            {%- if forloop.index>1 -%}
-              {% assign class="col-lg-2 team" %}
+  {%- if forloop.index==1 -%}
+
+
+    {%- for item in board-%}
+      <div class="banners">
+          <h1>
+            {{item.boardname}}
+          </h1>
+      </div>
+      <div class="container team">
+        <div class="row team current">
+          {%- for member in item.Members -%}
+            {%- if forloop.index < 6 -%}
+              {%- assign class = "col-md-4  team" -%}
+              {%- if forloop.index>1 -%}
+                {% assign class="col-lg-2 team" %}
+              {%- endif -%}
+              <div class="{{class}} " >
+                <div class="square pull-left">
+                  <img src={{member.imglink}} alt="Feature-img">
+                </div>
+                <h4>{{member.name}}</h4>
+                <p>{{member.post}} </p>
+              </div>
             {%- endif -%}
-            <div class="{{class}} " >
-              <div class="square pull-left">
-                <img src={{member.imglink}} alt="Feature-img">
+          {%- endfor -%}
+        </div>
+        <div class="row team current">
+          {%- for member in item.Members -%}
+            {%- if forloop.index > 5 -%}
+              <div class="col-lg-2 team" >
+                <div class="square pull-left">
+                  <img src={{member.imglink}} alt="Feature-img">
+                </div>
+                <h4>{{member.name}}</h4>
+                <p>{{member.post}} </p>
               </div>
-              <h4>{{member.name}}</h4>
-              <p>{{member.post}} </p>
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
       </div>
-      <div class="row team">
-        {%- for member in item.Members -%}
-          {%- if forloop.index > 5 -%}
-            <div class="col-lg-2 team" >
-              <div class="square pull-left">
-                <img src={{member.imglink}} alt="Feature-img">
-              </div>
-              <h4>{{member.name}}</h4>
-              <p>{{member.post}} </p>
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
-    </div>
 
 
-  {%- endfor -%}
+    {%- endfor -%}
+    {%- else -%}
+    {%- for item in board-%}
+      <div class="banners">
+          <h1>
+            {{item.boardname}}
+          </h1>
+      </div>
+      <div class="container team">
+        <div class="row team">
+          <ol class="team">
+            {%- for member in item.Members -%}
+              <li>
+                {%- if member.post=="President" -%}
+                  {%- assign class = "President" -%}
+                  {%- else -%}
+                  {%- assign class = "" -%}
+                {%- endif -%}
+                <span class="name {{class}} ">{{member.name}} </span>
+                <span class="{{class}} ">({{member.post}}) </span>
+              </li>
+            {%- endfor -%}
+        </ol>
+        </div>
+
+      </div>
+
+
+    {%- endfor -%}
+
+  {%- endif -%}
   <hr class ="dashed">
+
 {%- endfor -%}
 <!-- <div class="container team">
         <h1>

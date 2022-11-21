@@ -88,11 +88,14 @@ hr.dashed {
 }
 .row.team{
   height: fit-content;
+  /* display: flex; */
+  margin-bottom: 5px;
+}
+.row.team.current{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 5px;
 }
 .col-md-4.team{
   height: 279px;
@@ -137,7 +140,22 @@ hr.dashed {
   height: 266px;
   flex-direction: column;
 }
-
+ol.team{
+  columns: 25rem;
+  column-gap: 7rem;
+  column-rule: 4px dotted turquoise;
+  align-items: left;
+}
+ol.team li{
+  break-inside: avoid;
+  font-size: 12px;
+}
+ol.team li span.name{
+  font-size: 15px;
+}
+ol.team li span.President{
+  text-shadow: 0 0 #1b33ff;
+}
 @media (min-width: 1068px) and (max-width: 1400px) {
  .post-sidebar{
     margin-top: 15px;
