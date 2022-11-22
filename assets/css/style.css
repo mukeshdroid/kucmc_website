@@ -118,7 +118,8 @@ hr.dashed {
   position: relative;
   object-position: center;
   height: 200px;
-  width: 150px;
+  width: 100%;
+
 }
 .row.team h4{
   width: 150px;
@@ -136,7 +137,9 @@ hr.dashed {
   justify-content: flex-end;
   align-items: flex-end;
   align-content: space-around;
-  width: 150px;
+  width: 15%;
+  min-width: 120px;
+  max-width:150px;
   height: 266px;
   flex-direction: column;
 }
