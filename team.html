@@ -2,13 +2,15 @@
 layout: default_style
 permalink: /team
 ---
+
 <!--
   Previous Committee Members
-  Founding Committee Members
- -->
 
+  Founding Committee Members
+-->
 {%- for board in site.data.boardlist.boards -%}
   {%- for item in board-%}
+ 
     <div class="banners">
         <h1>
           {{item.boardname}}
@@ -90,3 +92,4 @@ permalink: /team
   </div>
 </div>
 <hr class ="dashed"> -->
+

@@ -1,11 +1,13 @@
 boards:
+  
+
   -board2022:
   
     boardname: "Current Committe Members"
     Members:
       - name: Mukesh Tiwari
         post: President
-        imglink: "../assets/img/team/muku.jpeg"
+        imglink:  "../assets/img/team/muku.jpeg"
       - name: Ayam Basyal
         post: Vice-President
         imglink: "../assets/img/team/ayam.jpg"
@@ -36,5 +38,50 @@ boards:
       - name: Susmita Sharma
         post: Executive Member
         imglink: "../assets/img/team/susmita.jpg"
-        
-  
+  -board: 
+
+    boardname: "Advisors"
+    Members:
+      - name: Dr. Rabindra Kayastha
+        post: HOD, Department of Mathematics
+        imglink:  "../assets/img/slider/HOD.png"
+      - name: Dr. Ganga Ram Phaijoo
+        post: Assistant Professor
+        imglink: "../assets/img/team/gangasir.png"      
+  -board 2021:
+
+    boardname: "KUCMC Committee 2021-22"
+    Members:
+      - name: Pratik Sharma
+        post: President
+        imglink:
+      - name: Saugat Bhattarai
+        post: Vice-President
+        imglink:
+      - name: Ujjwal Jung Karki
+        post: General Secretary
+        imglink: 
+      - name: Pratik Sharma
+        post: Club Secretary
+        imglink:
+      - name: Aakriti K.C.
+        post: Treasurer
+        imglink: 
+      - name: Priyanka Panta
+        post: Executive Member
+        imglink: 
+      - name: Spandan Pokhrel
+        post: Executive Member
+        imglink:
+      - name: Astha Pandey
+        post: Executive Member
+        imglink: 
+      - name: Manoj Kandel
+        post: Executive Member
+        imglink: 
+      - name: Ayam Basyal
+        post: Executive Member
+        imglink: 
+      - name: Ruby Shrestha
+        post: Executive Member
+        imglink: 
