@@ -16,25 +16,25 @@ boards:
         imglink: "../assets/img/team/ruby.jpg"
       - name: Supriya Baniya
         post: Treasurer
-        imglink: "../assets/img/team/member1.png"
+        imglink: "../assets/img/team/supriya.jpg"
       - name: Anisha Lamsal
         post: Executive Member
-        imglink: "../assets/img/team/member1.png"
+        imglink: "../assets/img/team/Anisha.jpg"
       - name: Bishesh Kafle
         post: Executive Member
         imglink: "../assets/img/team/bses.jpg"
-      - name: Pratishya Bhattarai
+      - name:  Pratikshya
         post: Executive Member
-        imglink: "../assets/img/team/member1.png"
+        imglink: "../assets/img/team/pratikshya.jpg"
       - name: Subodh Poudel
         post: Executive Member
-        imglink: "../assets/img/team/member1.png"
-      - name: Pratishya Bhattarai
+        imglink: "../assets/img/team/subodh.jpg"
+      - name: Prastut Bhattarai
         post: Executive Member
-        imglink: "../assets/img/team/member1.png"
-      - name: Pratishya Bhattarai
+        imglink: "../assets/img/team/prastut.jpg"
+      - name: Susmita Sharma
         post: Executive Member
-        imglink: "../assets/img/team/member1.png"
+        imglink: "../assets/img/team/susmita.jpg"
   -board2021:
     boardname: "Previous Committe Members"
     Members:

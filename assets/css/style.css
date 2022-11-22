@@ -184,7 +184,26 @@ ol.team li span.President{
  margin-bottom: 30px;
 }
 .blog-image{
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  position: relative;
+  object-position: center;
+  height: 40vw;
+  max-height: 380px;
+  width: 100%;
+}
+.post-img{
+  margin-bottom: 20px;
+  object-fit: cover;
+  position: relative;
+  object-position: center;
+  height: 40vw;
+  max-height: 380px;
+  width: 100%;
+}
+.post-img.collage{
+  height:30vw;
+  width:30%;
 }
 .carousel-inner{
   width:100%;
@@ -380,9 +399,9 @@ address {
 
 .banner-text{
     font-family: 'Raleway', sans-serif;
-    color:white;
-    font-size: 50px;
-
+    margin-bottom: 25px;
+    /* font-size: 50px; */
+    text-align: center;
     }
 
 #banners{
