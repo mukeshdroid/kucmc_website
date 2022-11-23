@@ -53,14 +53,15 @@ permalink: /team
 
     {%- endfor -%}
     {%- else -%}
+    {%- assign democ = forloop.index -%}
     {%- for item in board-%}
       <div class="banners">
-          <h1 class="banner-text">
+          <h1 class="banner-text "onclick="myFunction({{democ}})">
             {{item.boardname}}
           </h1>
       </div>
       <div class="container team">
-        <div class="row team">
+        <div class="row team" id="demo{{democ}}">
           <ol class="team">
             {%- for member in item.Members -%}
               <li>
@@ -85,41 +86,10 @@ permalink: /team
   <hr class ="dashed">
 
 {%- endfor -%}
-<!-- <div class="container team">
-        <h1>
-          Current Committee Members
-        </h1>
-</div>
-<div class="container team">
-  <div class="row team">
-    {%- for member in site.data.board2022.board1.Members -%}
-      {%- if forloop.index < 6 -%}
-        {%- assign class = "col-md-4  team" -%}
-        {%- if forloop.index>1 -%}
-          {% assign class="col-lg-2 team" %}
-        {%- endif -%}
-        <div class="{{class}} " >
-          <div class="square pull-left">
-            <img src={{member.imglink}} alt="Feature-img">
-          </div>
-          <h4>{{member.name}}</h4>
-          <p>{{member.post}} </p>
-        </div>
-      {%- endif -%}
-    {%- endfor -%}
-  </div>
-  <div class="row team">
-    {%- for member in site.data.board2022.board1.Members -%}
-      {%- if forloop.index > 5 -%}
-        <div class="col-lg-2 team" >
-          <div class="square pull-left">
-            <img src={{member.imglink}} alt="Feature-img">
-          </div>
-          <h4>{{member.name}}</h4>
-          <p>{{member.post}} </p>
-        </div>
-      {%- endif -%}
-    {%- endfor -%}
-  </div>
-</div>
-<hr class ="dashed"> -->
+<script>
+  function myFunction(val) {
+      console.log("demo"+val);
+      document.getElementById("demo"+val).style.visibility = "hidden";
+      console.log(val);
+  }
+  </script>

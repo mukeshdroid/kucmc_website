@@ -2,7 +2,7 @@
 layout: post
 title: "KU Alumni Meet 2022"
 description: "KU Alumni Meet 2022 was held at Kathmandu University School of Management(KUSOM) on August 21,022 Saturday."
-picture: "alumnimeet.jpg"
+picture: "slider/alumnimeet.jpg"
 
 label_default: "alice"
 label_primary: "story"

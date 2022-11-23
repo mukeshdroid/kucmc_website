@@ -5,7 +5,7 @@ description: "'You ought to be ashamed of yourself for asking such a simple ques
 'Yes, we went to school in the sea, though you mayn't believe it—'
 'I never said I didn't!' interrupted Alice.
 'You did,' said the Mock Turtle."
-picture: blog1.jpg
+picture: slider/blog1.jpg
 
 label_default: "alice"
 label_primary: "story"

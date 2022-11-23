@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kathmandu University Computational Mathematics Club
-email: kucmc.ku@gmail.com
+email: kucmc@ku.edu.np
 description: > # this means to ignore newlines until "baseurl:"
   Kathmandu University Computational Mathematics Club shortly known as KUCMC is Departmental Club which fully and faithfully runs academic activities for smooth growth of it's members. The club was established back in 2018 as youngest Department club of Kathmandu University registered under Student Welfare Council.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -25,7 +25,7 @@ company_name: Kathmandu University Computational Mathematics Club
 address_line: Dhulikhel, Kavre
 telephone_number: 00
 fax_number: 00
-company_email: kucmc.ku@gmail.com
+company_email: kucmc@ku.edu.np
 google_map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.7942700389392!2d85.53878202920004!3d27.61903179892681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb091252720469%3A0x36213fa606a135fe!2sDepartment%20of%20Mathematics!5e0!3m2!1sen!2snp!4v1667524623025!5m2!1sen!2snp&zoom=18&maptype=satellite"
 
 # Social Link
@@ -41,7 +41,7 @@ googleplus_link: http://plus.google.com
 markdown: kramdown
 plugins:
   - jekyll-feed
-  
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
