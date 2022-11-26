@@ -1,0 +1,75 @@
+---
+layout: default_style
+permalink: /teaminfo
+---
+
+<!--
+  Founding Committee Members
+-->
+<div class="container">
+  <div class="row team">
+    <h1 class="banner-text">Past Board Members</h1>
+  </div>
+</div>
+<div class="container teaminfo">
+  <ul class="batchlist">
+    {%- assign board = site.data.boardlist.boards-%}
+    {% assign counti = 0 %}
+    {%- for item in board-%}
+      {% assign counti = counti | plus: 1 %}
+      {%- if counti<=2 -%}
+        {%- continue -%}
+      {%- endif -%}
+      {%- assign active = "" -%}
+      {%- if counti==3 -%}
+        {%- assign active = "aactive" -%}
+      {%- endif -%}
+      <li class="batch {{counti}} {{active}} " onclick="expandFunc({{counti}})">{{item[1].boardname}}</li>
+    {%- endfor -%}
+  </ul>
+  <div class="boardname">
+    {%- assign board = site.data.boardlist.boards-%}
+    {%- for item in board-%}
+      <p style="display:none;">{%- increment countii -%} {% assign SN = 0 %}</p>
+      {%- if countii<=2 -%}
+        {%- continue -%}
+      {%- endif -%}
+      {%- assign active = "hidden" -%}
+      {%- if countii==3 -%}
+        {%- assign active = "Active" -%}
+      {%- endif -%}
+      <div class="boardname-child {{countii}} {{active}} " aria-labelledby="uagb-tabs__tab0">
+        <figure class="wp-block-table is-style-stripes">
+          <table class="responstable">
+            <thead><tr><th>#</th><th>Post</th><th>Persons</th></tr></thead>
+            <tbody>
+              {%- for member in item[1].Members -%}
+                {% assign SN = SN | plus: 1 %}
+                <tr><td>{{SN}}</td><td>{{member.post}} </td><td>{{member.name}}</td></tr>
+              {%- endfor -%}
+            </tbody>
+          </table>
+        </figure>
+        </div>
+
+    {%- endfor -%}
+  </div>
+</div>
+<script>
+  const trs = document.getElementsByClassName("boardname-child");
+  const trs2 = document.getElementsByClassName("batch");
+  const startWith = 0;
+
+  function expandFunc(val) {
+    console.log(val);
+    for (let i = startWith; i < trs.length; i++) {
+      trs[i].classList.remove('Active');
+      trs2[i].classList.remove('aactive');
+      trs[i].classList.toggle('hidden');
+    }
+    document.getElementsByClassName("boardname-child "+val)[0].classList.remove('hidden');
+    document.getElementsByClassName("boardname-child "+val)[0].classList.toggle('Active');
+    document.getElementsByClassName("batch "+val)[0].classList.toggle('aactive');
+    // document.getElementById("anchor3").scrollIntoView();
+  }
+</script>

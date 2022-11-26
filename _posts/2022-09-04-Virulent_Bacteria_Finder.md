@@ -4,12 +4,8 @@ title: "Project Virulent Bacteria Finder"
 description: "This project was created by Aastha Pandey and Mukesh Tiwari for Watson Crack-the-Code, Biohackathon conducted by KUBiC"
 picture: "projects/VirulentBacteria.png"
 
-label_default: "alice"
-label_primary: "story"
-label_success:
-label_info: "personal"
-label_warning: "warning"
-label_danger:
+labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
+keywords:
 
 type: "project"
 author:

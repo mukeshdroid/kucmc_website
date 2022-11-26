@@ -4,12 +4,8 @@ title: "Version Control using Git and GitHub"
 description: "The workshop on 'Version Control using Git and GitHub' dated September 8,022 was mentored by Mr. Ayush Aryal and Mr. Shubhechchhak Pokhrel from Computer Engineering of Kathmandu University"
 picture: "slider/github.JPG"
 
-label_default: "alice"
-label_primary: "story"
-label_success:
-label_info: "personal"
-label_warning: "warning"
-label_danger:
+labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
+keywords:
 
 type: "post"
 author:

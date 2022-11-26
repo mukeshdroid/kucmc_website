@@ -4,12 +4,8 @@ title: "KU Alumni Meet 2022"
 description: "KU Alumni Meet 2022 was held at Kathmandu University School of Management(KUSOM) on August 21,022 Saturday."
 picture: "slider/alumnimeet.jpg"
 
-label_default: "alice"
-label_primary: "story"
-label_success:
-label_info: "personal"
-label_warning: "warning"
-label_danger:
+labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
+keywords:
 
 type: "post"
 author:
