@@ -45,7 +45,7 @@ permalink: /teaminfo
             <tbody>
               {%- for member in item[1].Members -%}
                 {% assign SN = SN | plus: 1 %}
-                <tr><td>{{SN}}</td><td>{{member.post}} </td><td>{{member.name}}</td></tr>
+                <tr><td>{{SN}}</td><td>{{member.name}}</td><td style="font-weight: 100;opacity: 81%;">{{member.post}} </td></tr>
               {%- endfor -%}
             </tbody>
           </table>
