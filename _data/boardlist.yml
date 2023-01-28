@@ -1,8 +1,8 @@
 boards:
-  
+
 
   -board2022:
-  
+
     boardname: "Current Committe Members"
     Members:
       - name: Mukesh Tiwari
@@ -38,8 +38,7 @@ boards:
       - name: Susmita Sharma
         post: Executive Member
         imglink: "../assets/img/team/susmita.jpg"
-  -board: 
-
+  -board2022 Advisors:
     boardname: "Advisors"
     Members:
       - name: Dr. Rabindra Kayastha
@@ -47,10 +46,9 @@ boards:
         imglink:  "../assets/img/slider/HOD.png"
       - name: Dr. Ganga Ram Phaijoo
         post: Assistant Professor
-        imglink: "../assets/img/team/gangasir.png"      
+        imglink: "../assets/img/team/gangasir.png"
   -board 2021:
-
-    boardname: "KUCMC Committee 2021-22"
+    boardname: "Board 2021/22"
     Members:
       - name: Pratik Sharma
         post: President
@@ -60,28 +58,64 @@ boards:
         imglink:
       - name: Ujjwal Jung Karki
         post: General Secretary
-        imglink: 
+        imglink:
       - name: Pratik Sharma
         post: Club Secretary
         imglink:
       - name: Aakriti K.C.
         post: Treasurer
-        imglink: 
+        imglink:
       - name: Priyanka Panta
         post: Executive Member
-        imglink: 
+        imglink:
       - name: Spandan Pokhrel
         post: Executive Member
         imglink:
       - name: Astha Pandey
         post: Executive Member
-        imglink: 
+        imglink:
       - name: Manoj Kandel
         post: Executive Member
-        imglink: 
+        imglink:
       - name: Ayam Basyal
         post: Executive Member
-        imglink: 
+        imglink:
       - name: Ruby Shrestha
         post: Executive Member
-        imglink: 
+        imglink:
+  -board2018:
+    boardname: "Board 2018/19"
+    Members:
+      - name: Mukesh Tiwari
+        post: President
+        imglink: "../assets/img/team/muku.jpeg"
+      - name: Ayam Basyal
+        post: Vice-President
+        imglink: "../assets/img/team/ayam.jpg"
+      - name: Priyanka Panta
+        post: General Secretary
+        imglink: "../assets/img/team/pri.jpeg"
+      - name: Ruby Shrestha
+        post: Club Secretary
+        imglink: "../assets/img/team/ruby.jpg"
+      - name: Supriya Baniya
+        post: Treasurer
+        imglink: "../assets/img/team/member1.png"
+      - name: Anisha Lamsal
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+      - name: Bishesh Kafle
+        post: Executive Member
+        imglink: "../assets/img/team/bses.jpg"
+      - name: Pratishya Bhattarai
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+      - name: Subodh Poudel
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+      - name: Pratishya Bhattarai
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+      - name: Pratishya Bhattarai
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"

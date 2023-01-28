@@ -2,66 +2,21 @@
 layout: default_style
 permalink: /team
 ---
-
 <!--
   Previous Committee Members
-
   Founding Committee Members
--->
-{%- for board in site.data.boardlist.boards -%}
-  {%- for item in board-%}
- 
-    <div class="banners">
-        <h1>
-          {{item.boardname}}
-        </h1>
-    </div>
-    <div class="container team">
-      <div class="row team">
-        {%- for member in item.Members -%}
-          {%- if forloop.index < 6 -%}
-            {%- assign class = "col-md-4  team" -%}
-            {%- if forloop.index>1 -%}
-              {% assign class="col-lg-2 team" %}
-            {%- endif -%}
-            <div class="{{class}} " >
-              <div class="square pull-left">
-                <img src={{member.imglink}} alt="Feature-img">
-              </div>
-              <h4>{{member.name}}</h4>
-              <p>{{member.post}} </p>
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
-      <div class="row team">
-        {%- for member in item.Members -%}
-          {%- if forloop.index > 5 -%}
-            <div class="col-lg-2 team" >
-              <div class="square pull-left">
-                <img src={{member.imglink}} alt="Feature-img">
-              </div>
-              <h4>{{member.name}}</h4>
-              <p>{{member.post}} </p>
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
-    </div>
-
-
-  {%- endfor -%}
-  <hr class ="dashed">
-{%- endfor -%}
-
-<!-- <div class="container team">
-        <h1>
-          Current Committee Members
-        </h1>
+ -->
+{%- assign board = site.data.boardlist.boards-%}
+{%- assign board2022 = board["-board2022"]-%}
+{%- assign board2022adv = board["-board2022 Advisors"]-%}
+<div class="banners">
+    <h1 class="banner-text">
+      {{board2022.boardname}}
+    </h1>
 </div>
 <div class="container team">
-  <div class="row team">
-    {%- for member in site.data.board2022.board1.Members -%}
+  <div class="row team current">
+    {%- for member in board2022.Members -%}
       {%- if forloop.index < 6 -%}
         {%- assign class = "col-md-4  team" -%}
         {%- if forloop.index>1 -%}
@@ -77,8 +32,8 @@ permalink: /team
       {%- endif -%}
     {%- endfor -%}
   </div>
-  <div class="row team">
-    {%- for member in site.data.board2022.board1.Members -%}
+  <div class="row team current">
+    {%- for member in board2022.Members -%}
       {%- if forloop.index > 5 -%}
         <div class="col-lg-2 team" >
           <div class="square pull-left">
@@ -91,5 +46,38 @@ permalink: /team
     {%- endfor -%}
   </div>
 </div>
-<hr class ="dashed"> -->
-
+<div class="banners">
+  <h1 class="banner-text">
+    {{board2022adv.boardname}}
+  </h1>
+</div>
+<div class="container team">
+  <div class="row team adv">
+    {%- for member in board2022adv.Members -%}
+      {%- if forloop.index < 6 -%}
+        {%- assign class = "col-lg-2 team adv" -%}
+        <div class="{{class}} " >
+          <div class="square pull-left">
+            <img src={{member.imglink}} alt="Feature-img">
+          </div>
+          <h4>{{member.name}}</h4>
+          <p>{{member.post}} </p>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+<div class="container team">
+  <div class="row team adv">
+    <div >
+      <a href="/teaminfo"><span class="seeMore" >Past Board Members</span> </a>
+    </div>
+  </div>
+</div>
+<script>
+  function myFunction(val) {
+      console.log("demo"+val);
+      document.getElementById("demo"+val).style.visibility = "hidden";
+      console.log(val);
+  }
+  </script>

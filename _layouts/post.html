@@ -77,35 +77,17 @@
         </h1>
         <br>
 
-        <img src="/assets/img/slider/{{ post.picture }}" alt="Feature-img" width="100%" class="blog-image">
+        <img src="/assets/img/{{ post.picture }}" alt="Feature-img" width="100%" class="blog-image">
         <br>
         <p>{{ content }}</p>
         <span class="badge">{{ post.date | date: '%B %d, %Y' }}</span>
+        <!-- label classes: label-default,label-primary,label-success,label-info,label-warning,label-danger    -->
         <div class="pull-right">
-          {% if post.label_default %}
-            <span class="label label-default">{{ post.label_default }}</span>
-          {% endif %}
-
-          {% if post.label_primary %}
-            <span class="label label-primary">{{ post.label_primary }}</span>
-          {% endif %}
-
-          {% if post.label_success %}
-            <span class="label label-success">{{ post.label_success }}</span>
-          {% endif %}
-
-          {% if post.label_info %}
-            <span class="label label-info">{{ post.label_info }}</span>
-          {% endif %}
-
-          {% if post.label_warning %}
-            <span class="label label-warning">{{ post.label_warning }}</span>
-          {% endif %}
-
-          {% if post.label_danger %}
-            <span class="label label-danger">{{ post.label_danger }}</span>
-          {% endif %}
-
+          {%- assign classlist = post.labelclasses -%}
+          {%- for keyword in post.keywords -%}
+            <!-- {%- increment i -%} -->
+            <span class="label {{classlist[i]}}">{{ keyword }}</span>
+          {%- endfor -%}
         </div>
       </div>
 

@@ -76,15 +76,17 @@
           </div>
         </div>
         <!-- {% for tests in site.posts %}
-          {%- if tests.type=="testimonial" -%}
+          {%- if tests.type=="testimonial" -%}/img/
             {{tests.type}}
           {%- endif -%}
         {% endfor %} -->
+        <p style="display: none;">{%- increment tilecount -%}</p>
         <div class="row services-row services-row-head services-row-1 centerflipcards">
           {%- for post in site.posts -%}
-            {%- if post.type=="testimonial" -%}
+            {%- if post.type=="testimonial" and tilecount<=2 -%}
+            <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                <div class='square' data-image="/assets/img/slider/{{ post.picture }}">
+                <div class='square' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container">
 
                     <h2 class="textshadow">{{post.description}} </h2>
@@ -92,11 +94,11 @@
                   </div>
                   <div class="flip-overlay"></div>
                 </div>
-                <div class='square2' data-image="/assets/img/slider/{{ post.picture }}">
+                <div class='square2' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container2">
                     <div class="align-center"></div>
                     <div class="align-center">
-                      <a href={{post.url}} target="_self"><img src="/assets/img/slider/{{ post.picture }}" class="boxshadow" alt=""></a>
+                      <a href={{post.url}} target="_self"><img src="/assets/img/{{ post.picture }}" class="boxshadow" alt=""></a>
                     </div>
                     <a href={{post.url}} target="_blank" class="boxshadow kallyas-button">View More</a>
                   </div>
@@ -107,10 +109,10 @@
             {%- endif -%}
           {%- endfor -%}
           {%- for post in site.posts -%}
-            {%- if post.type=="project" and forloop.index != 2 -%}
-
+            {%- if post.type=="project" and tilecount<=3 -%}
+            <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                <div class='square' data-image="/assets/img/slider/{{ post.picture }}">
+                <div class='square' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container">
 
                     <h2 class="textshadow">{{post.title}} </h2>
@@ -118,11 +120,11 @@
                   </div>
                   <div class="flip-overlay"></div>
                 </div>
-                <div class='square2' data-image="/assets/img/slider/{{ post.picture }}">
+                <div class='square2' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container2">
                     <div class="align-center"></div>
                     <div class="align-center">
-                      <a href={{post.url}} target="_self" ><img src="/assets/img/slider/{{ post.picture }}" class="boxshadow" alt=""></a>
+                      <a href={{post.url}} target="_self" ><img src="/assets/img/{{ post.picture }}" class="boxshadow" alt=""></a>
                     </div>
                     <a href={{post.url}} target="_blank"  class="boxshadow kallyas-button">View More</a>
                   </div>
@@ -135,10 +137,10 @@
 
           {%- for post in site.posts -%}
 
-            {%- if post.type=="post" and forloop.index != 3 -%}
-
+            {%- if post.type=="post" and tilecount<=6-%}
+             <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                <div class='square' data-image="/assets/img/slider/cslide(4).jpg">
+                <div class='square' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container">
 
                     <h2 class="textshadow">{{post.title}} </h2>
@@ -146,11 +148,11 @@
                   </div>
                   <div class="flip-overlay"></div>
                 </div>
-                <div class='square2' data-image="/assets/img/slider/{{ post.picture }}">
+                <div class='square2' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container2">
                     <div class="align-center"></div>
                     <div class="align-center">
-                      <a href={{post.url}} target="_self" ><img src="/assets/img/slider/{{ post.picture }}" class="boxshadow" alt=""></a>
+                      <a href={{post.url}} target="_self" ><img src="/assets/img/{{ post.picture }}" class="boxshadow" alt=""></a>
                     </div>
                     <a href={{post.url}} target="_blank" class="boxshadow kallyas-button">View More</a>
                   </div>
