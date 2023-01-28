@@ -5,7 +5,7 @@ description: "This project was created by Aastha Pandey and Mukesh Tiwari for Wa
 picture: "projects/VirulentBacteria.png"
 
 labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
-keywords:
+keywords: [BioHackathon, Winner, Project, KUBiC]
 
 type: "project"
 author:
