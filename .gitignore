@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 _site
 vendor/bundle/ruby/2.7.0/gems/wdm-0.1.1/lib/wdm_ext.so
+_layouts/demo.js
