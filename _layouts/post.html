@@ -85,8 +85,8 @@
         <div class="pull-right">
           {%- assign classlist = post.labelclasses -%}
           {%- for keyword in post.keywords -%}
-            <!-- {%- increment i -%} -->
-            <span class="label {{classlist[i]}}">{{ keyword }}</span>
+          {%- assign val = forloop.index  | modulo: 6 -%}
+            <span class="label {{classlist[val]}}">{{ keyword }}</span>
           {%- endfor -%}
         </div>
       </div>

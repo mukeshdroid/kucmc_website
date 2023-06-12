@@ -1040,6 +1040,31 @@ footer h3 {
   color: #fff
 }
 
+img.Feature-img2 {
+  position: absolute!important;
+  z-index: 3;
+}
+img.Feature-img2:hover {
+  translate: 0px -10px;
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+}
+img.Feature-img {
+  position: absolute!important;
+  z-index: 1;
+}
+.col-lg-2.team:hover img.Feature-img {
+  position: absolute!important;
+  z-index: 1;
+  opacity:0;
+  transition: all 0.4s linear;
+}
+.col-md-4.team:hover img.Feature-img {
+  position: absolute!important;
+  z-index: 1;
+  opacity:0;
+  transition: all 0.4s linear;
+}
 @media (min-width:768px) and (max-width:1199px) {
   .carousel-caption {
       font-size: 12px;

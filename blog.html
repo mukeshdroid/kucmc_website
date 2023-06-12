@@ -8,6 +8,7 @@ published: true
 <div id="banners"></div>
 <div class="container">
   {% for post in site.posts %}
+  {% if post.type contains 'post' %}
     <div class="blog-post">
       <h1 class="blog-title">
         <i class="fa fa-file-text"></i>
@@ -20,14 +21,14 @@ published: true
       <span class="badge">{{ post.date | date: '%B %d, %Y' }}</span>
       <div class="pull-right">
         {%- assign classlist = post.labelclasses -%}
-        {% assign i = 0 %}
-        {%- for keyword in post.keywords -%}
-          <!-- {% assign i = i | plus: 1 %} -->
-          <span class="label {{classlist[i]}}">{{ keyword }}</span>
-        {%- endfor -%}
+          {%- for keyword in post.keywords -%}
+          {%- assign val = forloop.index  | modulo: 6 -%}
+            <span class="label {{classlist[val]}}">{{ keyword }}</span>
+          {%- endfor -%}
       </div>
     </div>
     <hr>
+  {% endif %}
   {% endfor %}
 </div>
 <!--End Main Container -->

@@ -7,37 +7,48 @@ boards:
     Members:
       - name: Mukesh Tiwari
         post: President
-        imglink:  "../assets/img/team/muku.jpeg"
+        imglink:  "../assets/img/team/muku.png"
+        imglink2:  "../assets/img/team/muku2.png"
       - name: Ayam Basyal
         post: Vice-President
-        imglink: "../assets/img/team/ayam.jpg"
+        imglink: "../assets/img/team/ayam.png"
+        imglink2:  "../assets/img/team/ayam2.png"
       - name: Priyanka Panta
         post: General Secretary
-        imglink: "../assets/img/team/pri.jpeg"
+        imglink: "../assets/img/team/pri.png"
+        imglink2:  "../assets/img/team/pri2.png"
       - name: Ruby Shrestha
         post: Club Secretary
-        imglink: "../assets/img/team/ruby.jpg"
+        imglink: "../assets/img/team/ruby.png"
+        imglink2:  "../assets/img/team/ruby2.png"
       - name: Supriya Baniya
         post: Treasurer
-        imglink: "../assets/img/team/supriya.jpg"
+        imglink: "../assets/img/team/supriya.png"
+        imglink2:  "../assets/img/team/supriya2.png"
       - name: Anisha Lamsal
         post: Executive Member
-        imglink: "../assets/img/team/Anisha.jpg"
+        imglink: "../assets/img/team/Anisha.png"
+        imglink2:  "../assets/img/team/Anisha2.png"
       - name: Bishesh Kafle
         post: Executive Member
-        imglink: "../assets/img/team/bses.jpg"
+        imglink: "../assets/img/team/bses.png"
+        imglink2:  "../assets/img/team/bses2.png"
       - name:  Pratikshya
         post: Executive Member
-        imglink: "../assets/img/team/pratikshya.jpg"
-      - name: Subodh Poudel
+        imglink: "../assets/img/team/pratikshya.png"
+        imglink2:  "../assets/img/team/pratikshya2.png"
+      - name: Hritik Chaudhary
         post: Executive Member
-        imglink: "../assets/img/team/subodh.jpg"
+        imglink: "../assets/img/team/hritik.png"
+        imglink2:  "../assets/img/team/hritik2.png"
       - name: Prastut Bhattarai
         post: Executive Member
-        imglink: "../assets/img/team/prastut.jpg"
+        imglink: "../assets/img/team/prastut.png"
+        imglink2:  "../assets/img/team/prastut2.png"
       - name: Susmita Sharma
         post: Executive Member
-        imglink: "../assets/img/team/susmita.jpg"
+        imglink: "../assets/img/team/susmita.png"
+        imglink2:  "../assets/img/team/susmita2.png"
   -board2022 Advisors:
     boardname: "Advisors"
     Members:

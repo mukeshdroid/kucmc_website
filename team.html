@@ -24,7 +24,8 @@ permalink: /team
         {%- endif -%}
         <div class="{{class}} " >
           <div class="square pull-left">
-            <img src={{member.imglink}} alt="Feature-img">
+            <img class="Feature-img" src={{member.imglink}} alt="Feature-img">
+            <img class="Feature-img2" src={{member.imglink2}} alt="Feature-img">
           </div>
           <h4>{{member.name}}</h4>
           <p>{{member.post}} </p>
@@ -37,7 +38,8 @@ permalink: /team
       {%- if forloop.index > 5 -%}
         <div class="col-lg-2 team" >
           <div class="square pull-left">
-            <img src={{member.imglink}} alt="Feature-img">
+            <img class="Feature-img" src={{member.imglink}} alt="Feature-img">
+            <img class="Feature-img2" src={{member.imglink2}} alt="Feature-img">
           </div>
           <h4>{{member.name}}</h4>
           <p>{{member.post}} </p>

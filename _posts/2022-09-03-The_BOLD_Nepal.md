@@ -8,6 +8,7 @@ labelclasses: ["label-default","label-primary","label-success","label-info","lab
 keywords: [BioHackathon, RunnerUp, Project, KUBiC]
 
 type: "project"
+sem: "2"
 author:
 ---
 # [**The BOLD Nepal** <i class="fa fa-github"></i>](https://github.com/suecarjayeswal/nepalensis.git)

@@ -247,6 +247,7 @@ th {
   }
   .label {
     border: 1px solid #000;
+    margin:1px;
   }
   .table {
     border-collapse: collapse !important;
@@ -1650,6 +1651,7 @@ label {
   display: inline-block;
   margin-bottom: 5px;
   font-weight: bold;
+
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -4265,6 +4267,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-weight: bold;
   line-height: 1;
   color: #fff;
+  margin:1px;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -5782,4 +5785,4 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+

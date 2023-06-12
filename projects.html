@@ -1,0 +1,93 @@
+---
+layout: default_style
+permalink: /projects
+published: true
+
+---
+{% assign sem1 = "" | split: "," %}
+{% assign sem2 = "" | split: "," %}
+{% assign sem3 = "" | split: "," %}
+{% assign sem4 = "" | split: "," %}
+{% assign sem5 = "" | split: "," %}
+{% assign sem6 = "" | split: "," %}
+{% assign sem7 = "" | split: "," %}
+{% assign sem8 = "" | split: "," %}
+{% assign sem = "" | split: "," %}
+
+<!-- Main Container -->
+{%- for post in site.posts -%}
+      {%- if post.type=="project"  -%}
+      {% case post.sem %}
+        {% when "1" %} {% assign sem1 = sem1 | push: post %}
+        {% when "2" %} {% assign sem2 = sem2 | push: post %}
+        {% when "3" %} {% assign sem3 = sem3 | push: post %}
+        {% when "4" %} {% assign sem4 = sem4 | push: post %}
+        {% when "5" %} {% assign sem5 = sem5 | push: post %}
+        {% when "6" %} {% assign sem6 = sem6 | push: post %}
+        {% when "7" %} {% assign sem7 = sem7 | push: post %}
+        {% when "8" %} {% assign sem8 = sem8 | push: post %}
+        {% else %}{% assign sem = sem | push: post %}
+      {% endcase %}
+  {%- endif -%}
+{%-endfor-%}
+<div id="banners"><br><br></div>
+
+
+<div class="container projects">
+  {%- if sem.size >0 -%}
+    <div class="row services-row services-row-head services-row-1 centerflipcards">
+     <p class="semTitle">------ Projects -----------</p><br>
+      {%- for post in sem -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+  {%- if sem1.size >0 -%}
+    <div class="row services-row services-row-head services-row-1 centerflipcards">
+     <p class="semTitle">------ 1st Yr 1st Sem -----------</p><br>
+      {%- for post in sem1 -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+  {%- if sem2.size >0 -%}
+    <div class="row services-row services-row-head services-row-2 centerflipcards">
+     <p class="semTitle">------ 1st Yr 2nd Sem -----------</p><br>
+      {%- for post in sem2 -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+  {%- if sem3.size >0 -%}
+    <div class="row services-row services-row-head services-row-3 centerflipcards">
+     <p class="semTitle">------ 2nd Yr 1st Sem -----------</p><br>
+      {%- for post in sem3 -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+  {%- if sem4.size >0 -%}
+    <div class="row services-row services-row-head services-row-4 centerflipcards">
+     <p class="semTitle">------ 2nd Yr 2nd Sem -----------</p><br>
+      {%- for post in sem4 -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+  {%- if sem5.size >0 -%}
+    <div class="row services-row services-row-head services-row-5 centerflipcards">
+     <p class="semTitle">------ 3rd Yr 1st Sem -----------</p><br>
+      {%- for post in sem5 -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+  {%- if sem6.size >0 -%}
+    <div class="row services-row services-row-head services-row-6 centerflipcards">
+     <p class="semTitle">------ 3rd Yr 2nd Sem -----------</p><br>
+      {%- for post in sem6 -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+  {%- if sem7.size >0 -%}
+    <div class="row services-row services-row-head services-row-7 centerflipcards">
+     <p class="semTitle">------ 4th Yr 1st Sem -----------</p><br>
+      {%- for post in sem7 -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+  {%- if sem8.size >0 -%}
+    <div class="row services-row services-row-head services-row-8 centerflipcards">
+     <p class="semTitle">------ 4th Yr 2nd Sem -----------</p><br>
+      {%- for post in sem8 -%}{% include projectTile.html  title=post.title author=post.author %}{%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
+
+<!--End Main Container -->
