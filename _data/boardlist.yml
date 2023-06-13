@@ -29,26 +29,26 @@ boards:
         post: Executive Member
         imglink: "../assets/img/team/Anisha.png"
         imglink2:  "../assets/img/team/Anisha2.png"
-      - name: Bishesh Kafle
-        post: Executive Member
-        imglink: "../assets/img/team/bses.png"
-        imglink2:  "../assets/img/team/bses2.png"
-      - name:  Pratikshya
-        post: Executive Member
-        imglink: "../assets/img/team/pratikshya.png"
-        imglink2:  "../assets/img/team/pratikshya2.png"
       - name: Hritik Chaudhary
         post: Executive Member
         imglink: "../assets/img/team/hritik.png"
         imglink2:  "../assets/img/team/hritik2.png"
-      - name: Prastut Bhattarai
+      - name:  Pratikshya
         post: Executive Member
-        imglink: "../assets/img/team/prastut.png"
-        imglink2:  "../assets/img/team/prastut2.png"
+        imglink: "../assets/img/team/pratikshya.png"
+        imglink2:  "../assets/img/team/pratikshya2.png"
       - name: Susmita Sharma
         post: Executive Member
         imglink: "../assets/img/team/susmita.png"
         imglink2:  "../assets/img/team/susmita2.png"
+      - name: Prastut Bhattarai
+        post: Executive Member
+        imglink: "../assets/img/team/prastut.png"
+        imglink2:  "../assets/img/team/prastut2.png"
+      - name: Bishesh Kafle
+        post: Executive Member
+        imglink: "../assets/img/team/bses.png"
+        imglink2:  "../assets/img/team/bses2.png"
   -board2022 Advisors:
     boardname: "Advisors"
     Members:
