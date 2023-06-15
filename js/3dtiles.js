@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
 
     //Count nr. of square classes
-    var countSquare = $('.square').length;
-
+    var countSquare = $('.square.Square').length;
+    console.log(countSquare);
     //For each Square found add BG image
     for (i = 0; i < countSquare; i++) {
       var firstImage = $('.square').eq([i]);
