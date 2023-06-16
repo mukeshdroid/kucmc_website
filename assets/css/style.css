@@ -449,7 +449,11 @@ h3.col-xs-12 {
 body {
   font-size: 15px;
   line-height: 24px;
-  background: #f8faff
+  background: #e5fafb;
+  background: #E8E8E8;
+  background: -moz-linear-gradient(45deg, #E8E8E8 0%, #EDEDED 16%, #D0FBFB 100%);
+  background: -webkit-linear-gradient(45deg, #E8E8E8 0%, #EDEDED 16%, #D0FBFB 100%);
+  background: linear-gradient(45deg, #E8E8E8 0%, #EDEDED 16%, #D0FBFB 100%);
 }
 
 a,a:hover {
@@ -713,7 +717,7 @@ p.blog-text {
 
 .services-section .services-header em {
   color: #9caead;
-  background-color: #fff;
+  /* background-color: #fff; */
   text-shadow: 0 1px
 }
 
@@ -1039,6 +1043,34 @@ footer h3 {
 .carousel-caption .carousel-title {
   color: #fff
 }
+
+img.Feature-img2 {
+  position: absolute!important;
+  z-index: 3;
+}
+img.Feature-img2:hover {
+  translate: 0px -10px;
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+}
+img.Feature-img {
+  position: absolute!important;
+  z-index: 1;
+}
+.col-lg-2.team:hover img.Feature-img {
+  position: absolute!important;
+  z-index: 1;
+  opacity:0;
+  transition: all 0.4s linear;
+}
+.col-md-4.team:hover img.Feature-img {
+  position: absolute!important;
+  z-index: 1;
+  opacity:0;
+  transition: all 0.4s linear;
+}
+
+
 
 @media (min-width:768px) and (max-width:1199px) {
   .carousel-caption {

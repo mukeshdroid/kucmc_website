@@ -14,29 +14,28 @@
 
             <!-- Indicators -->
             <ol class="carousel-indicators visible-lg">
-              <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+              {%- for image in site.static_files -%}
+                {%- if image.name contains 'cslide' -%}
+                  <!--  -->
+                  {%- if image.name contains '0' and image.name contains 'cslide' -%}
+                    <li data-target="#carousel-1" data-slide-to="{%- increment cslidecount -%}" class="active"></li>
+                    {%- continue -%}
+                  {%- endif -%}
+                  <li data-target="#carousel-1" data-slide-to="{%- increment cslidecount -%}"></li>
+                {%- endif -%}
+
+              {%- endfor -%}
+              <!-- <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-1" data-slide-to="1"></li>
-              <li data-target="#carousel-1" data-slide-to="2"></li>
+              <li data-target="#carousel-1" data-slide-to="2"></li> -->
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               {% for image in site.static_files %}
-                {% if image.name contains '0' and image.name contains 'cslide' %}
-                  <!-- Begin Slide {{forloop.index}} -->
-                  <div {% if image.name contains '0' %}class="item active"{% elsif 1==1 %}class="item"{%endif%}>
-                    <img src="{{ site.baseurl }}{{ image.path }}" style="height:400px;width:100%;object-position:center;object-fit: cover;" alt="Image of {{forloop.index}} carousel">
-                    <div class="carousel-caption">
-                      <h3 class="carousel-title hidden-xs">_</h3>
-                      <p class="carousel-body">_</p>
-                    </div>
-                  </div>
-                  <!-- End Slide {{forloop.index}} -->
-                  {%continue%}
-                {% endif %}
                 {% if image.name contains 'cslide' %}
                   <!-- Begin Slide {{forloop.index}} -->
-                  <div class="item">
+                  <div {% if image.name contains "0" %}class="item active"{% else %}class="item"{%endif%}>
                     <img src="{{ site.baseurl }}{{ image.path }}" style="height:400px;width:100%;object-position:center;object-fit: cover;" alt="Image of {{forloop.index}} carousel">
                     <div class="carousel-caption">
                       <h3 class="carousel-title hidden-xs">_</h3>
@@ -44,7 +43,9 @@
                     </div>
                   </div>
                   <!-- End Slide {{forloop.index}} -->
+
                 {% endif %}
+
               {% endfor %}
             </div>
 
@@ -86,7 +87,7 @@
             {%- if post.type=="testimonial" and tilecount<=2 -%}
             <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                <div class='square' data-image="/assets/img/{{ post.picture }}">
+                <div class='square Square' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container">
 
                     <h2 class="textshadow">{{post.description}} </h2>
@@ -112,7 +113,7 @@
             {%- if post.type=="project" and tilecount<=3 -%}
             <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                <div class='square' data-image="/assets/img/{{ post.picture }}">
+                <div class='square Square' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container">
 
                     <h2 class="textshadow">{{post.title}} </h2>
@@ -140,7 +141,7 @@
             {%- if post.type=="post" and tilecount<=6-%}
              <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                <div class='square' data-image="/assets/img/{{ post.picture }}">
+                <div class='square Square'  data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container">
 
                     <h2 class="textshadow">{{post.title}} </h2>

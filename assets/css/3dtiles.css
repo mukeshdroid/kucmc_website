@@ -248,14 +248,26 @@ transform: translateY(-50%) translateX(0px)  scale(1);
 
     /*You can delete this style*/
     .centerflipcards{
-        display:flex;
-        /* width:1330px;
-            height:440px; */
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 25px;
+        align-items: flex-start;
         flex-wrap: wrap;
-        text-align:center;
-        margin:0 auto;
-        margin-top:25px;
+        /* flex-direction: column; */
     }
+    .semTitle {
+        width: 100%;
+        position: relative;
+        padding: 0 13px;
+        align-content: baseline;
+        text-align: left;
+        /* left: 0; */
+        background: beige;
+        background-color: #6BAAA8;
+          color: white;
+    }
+
 .clearfix{clear:both;}
 .centerflipcards p{
   font-family:"Open Sans";

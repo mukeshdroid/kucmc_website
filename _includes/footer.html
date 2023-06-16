@@ -7,7 +7,7 @@
         <p class="footer-contact">
           {%assign mailto ="mailto:" |append:site.company_email%}
           <i class="fa-sm fa fa-envelope"></i>
-          <a href={{mailto }}>{{ site.company_email }}</a> <br>
+          <a href="{{mailto}}">{{ site.company_email }}</a> <br>
           <i class="fa fa-map-marker" aria-hidden="true"></i>
           {{ site.address_line }}<br>
         </p>
@@ -16,6 +16,7 @@
         <h3><i class="fa fa-external-link"></i> Links</h3>
         <p><a href="/about"> About ( Who we are )</a></p>
         <p><a href="/blog"> Events ( Our activities )</a></p>
+        <p><a href="/projects"> Projects ( Our Fellows' Projects )</a></p>
         <p><a href="/team"> Team ( Meet the Team )</a></p>
         <p><a href="/contact"> Contact ( Feel free to contact )</a></p>
       </div>
@@ -55,25 +56,3 @@
     <!-- <p>&copy; Copyright {{ site.time | date: '%Y' }}, <a href="#">Your Website Link</a>. <br>Theme ported by <a href="https://melvinchng.github.io/" target="_blank">Melvin Ch'ng</a></p> -->
   </div>
 </footer>
-<!-- <script>
-  let x = document.getElementById('x');
-
-let z = document.getElementById('z');
-
-let cl = localStorage.getItem("class");
-
-if (cl !== z.className) {z.className = cl};
-
-x.addEventListener('click', function() {
-
-    let className = z.className;
-    if (className == 'list') {
-        z.className = 'grid';
-
-    }else{
-        z.className = 'list';
-    }
-    localStorage.setItem("class", z.className);
-
-});
-</script> -->

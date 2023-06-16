@@ -8,6 +8,7 @@ labelclasses: ["label-default","label-primary","label-success","label-info","lab
 keywords: [BioHackathon, Winner, Project, KUBiC]
 
 type: "project"
+sem: "5"
 author:
 ---
 # [**Virulent_Bacteria_Finder** <i class="fa fa-github"></i>](https://github.com/mukeshdroid/virulent_bacteria_finder.git)
