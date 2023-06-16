@@ -54,4 +54,21 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Site Collections (like posts but without pesky date/time requirements)
+collections:
+  notebooks:
+    output: true
 
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+exclude:
+  - tools/
+  - notebooks/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

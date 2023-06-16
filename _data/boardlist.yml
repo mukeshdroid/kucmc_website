@@ -2,7 +2,6 @@ boards:
 
 
   -board2022:
-
     boardname: "Current Committe Members"
     Members:
       - name: Mukesh Tiwari
@@ -58,6 +57,42 @@ boards:
       - name: Dr. Ganga Ram Phaijoo
         post: Assistant Professor
         imglink: "../assets/img/team/gangasir.png"
+  -board2020:
+    boardname: "Board 2020/21"
+    Members:
+      - name: Saishab Bhattarai
+        post: President
+        imglink: "../assets/img/team/member1.png"
+      - name: Pratik Sharma
+        post: Vice-President
+        imglink: "../assets/img/team/member1.png"
+      - name: Bishal Karki
+        post: General Secretary
+        imglink: "../assets/img/team/member1.png"
+      - name: Ujjwal Jung Karki
+        post: Club Secretary
+        imglink: "../assets/img/team/member1.png"
+      - name: Astha Pandey
+        post: Treasurer
+        imglink: "../assets/img/team/member1.png"
+      - name: Kushal Regmi
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+      - name: Diya Shrestha
+        post: Executive Member
+        imglink:
+      - name: Anand Pant
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+      - name: Sabin Shrestha
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+      - name: Avash Dahal
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+      - name: Sunil Shrestha
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
   -board 2021:
     boardname: "Board 2021/22"
     Members:
@@ -94,39 +129,40 @@ boards:
       - name: Ruby Shrestha
         post: Executive Member
         imglink:
-  -board2018:
-    boardname: "Board 2018/19"
+  -board 2019:
+    boardname: "Board 2019/20"
     Members:
-      - name: Mukesh Tiwari
+      - name: Dipesh Pokhrel
         post: President
-        imglink: "../assets/img/team/muku.jpeg"
-      - name: Ayam Basyal
+        imglink: "../assets/img/team/member1.png"
+      - name: Sikkum Rai
         post: Vice-President
-        imglink: "../assets/img/team/ayam.jpg"
-      - name: Priyanka Panta
+        imglink: "../assets/img/team/member1.png"
+      - name: Saishab Bhattarai
         post: General Secretary
-        imglink: "../assets/img/team/pri.jpeg"
-      - name: Ruby Shrestha
+        imglink: "../assets/img/team/member1.png"
+      - name: Bishal Karki
         post: Club Secretary
-        imglink: "../assets/img/team/ruby.jpg"
-      - name: Supriya Baniya
+        imglink: "../assets/img/team/member1.png"
+      - name: Suraj Dahal
         post: Treasurer
         imglink: "../assets/img/team/member1.png"
-      - name: Anisha Lamsal
+      - name: Allen Maharjan
         post: Executive Member
         imglink: "../assets/img/team/member1.png"
-      - name: Bishesh Kafle
-        post: Executive Member
-        imglink: "../assets/img/team/bses.jpg"
-      - name: Pratishya Bhattarai
+      - name: Saugat Rai
         post: Executive Member
         imglink: "../assets/img/team/member1.png"
-      - name: Subodh Poudel
+      - name: Astha Pandey
         post: Executive Member
         imglink: "../assets/img/team/member1.png"
-      - name: Pratishya Bhattarai
+      - name: Rajani Shrestha
         post: Executive Member
         imglink: "../assets/img/team/member1.png"
-      - name: Pratishya Bhattarai
+      - name: Sabin Shrestha
         post: Executive Member
         imglink: "../assets/img/team/member1.png"
+      - name: Sijan Pokhrel
+        post: Executive Member
+        imglink: "../assets/img/team/member1.png"
+
