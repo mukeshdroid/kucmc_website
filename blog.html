@@ -15,7 +15,14 @@ published: true
         {{ post.title }}
       </h1>
       <br>
-      <img src="assets/img/{{ post.picture }}" alt="Feature-img" width="100%" class="blog-image">
+
+      {%- assign urlorg = post.picture -%}
+      {% unless urlorg contains "http" %}
+        {%- assign urlorg = "assets/img/" | append: urlorg -%}
+      {% else %}
+        {%- assign urlorg = urlorg -%}
+      {% endunless %}
+      <img src="{{urlorg}}" alt="Feature-img" width="100%" class="blog-image">
       <br>
       <p>{{ post.description }}<a href="{{ post.url }}">  Read More...</a></p>
       <span class="badge">{{ post.date | date: '%B %d, %Y' }}</span>
