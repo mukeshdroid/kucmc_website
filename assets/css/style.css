@@ -1069,7 +1069,21 @@ img.Feature-img {
   opacity:0;
   transition: all 0.4s linear;
 }
+.darken-background {
+  background-image: url("https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/346467560_805001767860593_1583571056151436347_n.jpg?stp=dst-jpg_s960x960&amp;_nc_cat=103&amp;cb=99be929b-59f725be&amp;ccb=1-7&amp;_nc_sid=730e14&amp;_nc_ohc=QN-m3II2LkkAX9uKtdw&amp;_nc_ht=scontent.fktm20-1.fna&amp;oh=00_AfC3J3E-JR7ivZuwmApQ1EmGhEp3uL4q3glW_uPZ4DwUkQ&amp;oe=6490C0DC");
+  position: relative;
+  background-size: cover;
+}
 
+.darken-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value as needed */
+}
 
 
 @media (min-width:768px) and (max-width:1199px) {

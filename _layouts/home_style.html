@@ -113,7 +113,13 @@
             {%- if post.type=="project" and tilecount<=3 -%}
             <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                <div class='square Square' data-image="/assets/img/{{ post.picture }}">
+                {%- if post.author=="FB" -%}
+                  {%- assign imgUrl = post.picture -%}
+                {%- else -%}
+                 {%- assign imgUrl = "/assets/img/" | append: post.picture -%}
+                {%- endif -%}
+
+                <div class='square Square darken-background' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container">
 
                     <h2 class="textshadow">{{post.title}} </h2>
@@ -121,11 +127,11 @@
                   </div>
                   <div class="flip-overlay"></div>
                 </div>
-                <div class='square2' data-image="/assets/img/{{ post.picture }}">
+                <div class='square2' data-image="{{ imgUrl }}">
                   <div class="square-container2">
                     <div class="align-center"></div>
                     <div class="align-center">
-                      <a href={{post.url}} target="_self" ><img src="/assets/img/{{ post.picture }}" class="boxshadow" alt=""></a>
+                      <a href={{post.url}} target="_self" ><img src="{{ imgUrl }}" class="boxshadow" alt=""></a>
                     </div>
                     <a href={{post.url}} target="_blank"  class="boxshadow kallyas-button">View More</a>
                   </div>
@@ -139,9 +145,14 @@
           {%- for post in site.posts -%}
 
             {%- if post.type=="post" and tilecount<=6-%}
+              {%- if post.author=="FB" -%}
+                {%- assign imgUrl = post.picture -%}
+              {%- else -%}
+                {%- assign imgUrl = "/assets/img/" | append: post.picture -%}
+              {%- endif -%}
              <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                <div class='square Square'  data-image="/assets/img/{{ post.picture }}">
+                <div class='square Square darken-background'  data-image="{{ imgUrl }}">
                   <div class="square-container">
 
                     <h2 class="textshadow">{{post.title}} </h2>
@@ -149,11 +160,11 @@
                   </div>
                   <div class="flip-overlay"></div>
                 </div>
-                <div class='square2' data-image="/assets/img/{{ post.picture }}">
+                <div class='square2' data-image="{{ imgUrl }}">
                   <div class="square-container2">
                     <div class="align-center"></div>
                     <div class="align-center">
-                      <a href={{post.url}} target="_self" ><img src="/assets/img/{{ post.picture }}" class="boxshadow" alt=""></a>
+                      <a href={{post.url}} target="_self" ><img src="{{ imgUrl }}" class="boxshadow" alt=""></a>
                     </div>
                     <a href={{post.url}} target="_blank" class="boxshadow kallyas-button">View More</a>
                   </div>
