@@ -3,6 +3,7 @@ layout: post
 title: "Project Virulent Bacteria Finder"
 description: "This project was created by Aastha Pandey and Mukesh Tiwari for Watson Crack-the-Code, Biohackathon conducted by KUBiC"
 picture: "projects/VirulentBacteria.png"
+pictures: "projects/VirulentBacteria.png"
 
 labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
 keywords: [BioHackathon, Winner, Project, KUBiC]

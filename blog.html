@@ -22,7 +22,12 @@ published: true
       {% else %}
         {%- assign urlorg = urlorg -%}
       {% endunless %}
-      <img src="{{urlorg}}" alt="Feature-img" width="100%" class="blog-image">
+      {%- if post.author=="FB" -%}
+        <img src="{{urlorg}}" alt="Feature-img" width="100%" class="blog-image" style="height:400px;width:100%;object-position:center;object-fit: scale-down;    background: #74b9b9!important;">
+      {%- else -%}
+        <img src="{{urlorg}}" alt="Feature-img" width="100%" class="blog-image" >
+
+      {%- endif -%}
       <br>
       <p>{{ post.description }}<a href="{{ post.url }}">  Read More...</a></p>
       <span class="badge">{{ post.date | date: '%B %d, %Y' }}</span>

@@ -78,60 +78,67 @@
         </h1>
         <br>
          <!-- Begin #carousel-section -->
-    <section id="carousel-section" class="section-global-wrapper">
-      <div class="container-fluid-kamn">
-        <div class="row">
-          <div id="carousel-1" class="carousel slide" data-ride="carousel">
+      <section id="carousel-section" class="section-global-wrapper">
+        <div class="container-fluid-kamn">
+          <div class="row">
+            <div id="carousel-1" class="carousel slide" data-ride="carousel">
 
-            <!-- Indicators -->
-            <ol class="carousel-indicators visible-lg">
-              {%- assign slidecount=1 -%}
-              {%- for image in page.pictures -%}
-              <!--  {{slidecount}} -->
-                  {%- if forloop.index==0 -%}
-                    <li data-target="#carousel-1" data-slide-to="{{slidecount}}" class="active"></li>
+              <!-- Indicators -->
+              <ol class="carousel-indicators visible-lg">
+                {%- assign slidecount=1 -%}
+                {%- for image in page.pictures -%}
+                <!--  {{slidecount}} -->
+                    {%- if forloop.index==0 -%}
+                      <li data-target="#carousel-1" data-slide-to="{{slidecount}}" class="active"></li>
+                      {%- assign slidecount=slidecount| plus: 1 -%}
+                      {%- continue -%}
+                    {%- endif -%}
+                    <li data-target="#carousel-1" data-slide-to="{{slidecount}}"></li>
                     {%- assign slidecount=slidecount| plus: 1 -%}
-                    {%- continue -%}
+
+                {%- endfor -%}
+
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                {% for image in page.pictures %}
+                  <!-- Begin Slide {{forloop.index}} -->
+                  {%- if forloop.index==1 -%}
+                    {%- assign className = "item active" -%}
+                  {%- else -%}
+                    {%- assign className = "item" -%}
                   {%- endif -%}
-                  <li data-target="#carousel-1" data-slide-to="{{slidecount}}"></li>
-                  {%- assign slidecount=slidecount| plus: 1 -%}
-
-              {%- endfor -%}
-
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              {% for image in page.pictures %}
-                <!-- Begin Slide {{forloop.index}} -->
-                {%- if forloop.index==1 -%}
-                  <div class="item active">
-                {%- else -%}
-                <div class="item">
-                {%- endif -%}
-                  <img src="{{ image }}" style="height:400px;width:100%;object-position:center;object-fit: cover;" alt="Image of {{forloop.index}} carousel">
-                  <div class="carousel-caption">
-                    <h3 class="carousel-title hidden-xs">_</h3>
-                    <p class="carousel-body">_</p>
-                  </div>
-                </div>
-                <!-- End Slide {{forloop.index}} -->
+                  <div class="{{className}}">
+                    {%- if post.author=="FB" -%}
+                      {%- assign imgUrl = image -%}
+                    {%- else -%}
+                      {%- assign imgUrl = "/assets/img/" | append: image  -%}
+                    {%- endif -%}
+                    <img src="{{ imgUrl }}" style="height:400px;width:100%;object-position:center;object-fit: scale-down;" alt="Image of {{forloop.index}} carousel">
+                      <div class="carousel-caption">
+                        <h3 class="carousel-title hidden-xs">_</h3>
+                        <p class="carousel-body">_</p>
+                      </div>
+                    </div>
+                  <!-- End Slide {{forloop.index}} -->
 
 
-              {% endfor %}
+                {% endfor %}
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-1" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-1" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
     <!-- End #carousel-section -->
         <br>
 

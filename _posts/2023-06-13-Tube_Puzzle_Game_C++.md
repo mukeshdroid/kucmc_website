@@ -4,6 +4,7 @@ layout: post
 title: "Project Tube Puzzle Game C++"
 description: "This project was created by Himanshu Gurung and Swikar Jaiswal as semester mini-project under COMP 202"
 picture: "projects/TubePuzzleGame.png"
+pictures: "projects/TubePuzzleGame.png"
 
 labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
 keywords: [DSA,COMP202,mini-project,3rdSem]
