@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  
 }
 article,
 aside,
@@ -247,6 +248,7 @@ th {
   }
   .label {
     border: 1px solid #000;
+    margin:1px;
   }
   .table {
     border-collapse: collapse !important;
@@ -1113,7 +1115,7 @@ pre code {
     width: 41.66666667%;
   }
   .col-md-4 {
-    width: 33.33333333%;
+    width: 33%;
   }
   .col-md-3 {
     width: 25%;
@@ -1271,7 +1273,7 @@ pre code {
     width: 41.66666667%;
   }
   .col-lg-4 {
-    width: 33.33333333%;
+    width: 33%;
   }
   .col-lg-3 {
     width: 25%;
@@ -1650,6 +1652,7 @@ label {
   display: inline-block;
   margin-bottom: 5px;
   font-weight: bold;
+
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -4265,6 +4268,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-weight: bold;
   line-height: 1;
   color: #fff;
+  margin:1px;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -5782,4 +5786,4 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+

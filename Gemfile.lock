@@ -54,6 +54,8 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2022.5)
       tzinfo (>= 1.0.0)
+    wdm (0.1.1)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -64,6 +66,8 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
   tzinfo-data
+  wdm (>= 0.1.0)
+  webrick
 
 BUNDLED WITH
    1.16.0

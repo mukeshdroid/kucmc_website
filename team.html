@@ -1,7 +1,85 @@
 ---
 layout: default_style
 permalink: /team
+published: true
 ---
+
+<!--
+  Previous Committee Members
+  Founding Committee Members
+ -->
+{%- assign board = site.data.boardlist.boards-%}
+{%- assign board2022 = board["-board2022"]-%}
+{%- assign board2022adv = board["-board2022 Advisors"]-%}
+<div class="banners">
+    <h1 class="banner-text">
+      {{board2022.boardname}}
+    </h1>
+</div>
+<div class="container team">
+  <div class="row team current">
+    {%- for member in board2022.Members -%}
+      {%- if forloop.index < 6 -%}
+        {%- assign class = "col-md-4  team" -%}
+        {%- if forloop.index>1 -%}
+          {% assign class="col-lg-2 team" %}
+        {%- endif -%}
+        <div class="{{class}} " >
+          <div class="square pull-left wow animated zoomIn">
+            <img class="Feature-img" src={{member.imglink}} alt="Feature-img">
+            <img class="Feature-img2" src={{member.imglink2}} alt="Feature-img">
+          </div>
+          <h4>{{member.name}}</h4>
+          <p>{{member.post}} </p>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+  <div class="row team current">
+    {%- for member in board2022.Members -%}
+      {%- if forloop.index > 5 -%}
+        <div class="col-lg-2 team" >
+          <div class="square pull-left wow animated zoomIn">
+            <img class="Feature-img" src={{member.imglink}} alt="Feature-img">
+            <img class="Feature-img2" src={{member.imglink2}} alt="Feature-img">
+          </div>
+          <h4>{{member.name}}</h4>
+          <p>{{member.post}} </p>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+<div class="banners">
+  <h1 class="banner-text">
+    {{board2022adv.boardname}}
+  </h1>
+</div>
+<div class="container team">
+  <div class="row team adv">
+    {%- for member in board2022adv.Members -%}
+      {%- if forloop.index < 6 -%}
+        {%- assign class = "col-lg-2 team adv" -%}
+        <div class="{{class}} " >
+          <div class="square pull-left wow animated zoomIn">
+            <img src={{member.imglink}} alt="Feature-img">
+          </div>
+          <h4>{{member.name}}</h4>
+          <p>{{member.post}} </p>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+<div class="container team">
+  <div class="row team adv">
+    <div >
+      <a href="/teaminfo"><span class="seeMore" >Past Board Members</span> </a>
+    </div>
+  </div>
+</div>
+
+=======
 
 <!-- Main Container -->
 <div id="banners"></div>
@@ -552,3 +630,4 @@ permalink: /team
   </div>
 </div>
 <!--End Main Container -->
+
