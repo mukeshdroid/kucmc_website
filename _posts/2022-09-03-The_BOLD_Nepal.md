@@ -3,6 +3,7 @@ layout: post
 title: "The BOLD Nepal"
 description: "This project was created by Swikar Jaiswal and Aahana Bhandari(Bsc. BT)  for Watson Crack-the-Code, Biohackathon conducted by KUBiC"
 picture: "projects/TheBOLDNepal_prev.png"
+pictures: "projects/TheBOLDNepal_prev.png"
 
 labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
 keywords: [BioHackathon, RunnerUp, Project, KUBiC]
