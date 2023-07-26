@@ -113,11 +113,16 @@
             {%- if post.type=="project" and tilecount<=3 -%}
             <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
-                {%- if post.author=="FB" -%}
-                  {%- assign imgUrl = post.picture -%}
-                {%- else -%}
-                 {%- assign imgUrl = "/assets/img/" | append: post.picture -%}
-                {%- endif -%}
+                {%- comment -%}
+
+                  {%- if post.author=="FB" -%}
+                    {%- assign imgUrl = post.picture -%}
+                  {%- else -%}
+                    {%- assign imgUrl = "/assets/img/" | append: post.picture -%}
+                  {%- endif -%}
+                {%- endcomment -%}
+
+                {%- assign imgUrl = "/assets/img/" | append: post.picture -%}
 
                 <div class='square Square darken-background' data-image="/assets/img/{{ post.picture }}">
                   <div class="square-container">
@@ -150,6 +155,9 @@
               {%- else -%}
                 {%- assign imgUrl = "/assets/img/" | append: post.picture -%}
               {%- endif -%}
+
+              {%- assign imgUrl = "/assets/img/" | append: post.picture -%}
+
              <p style="display: none;">{%- increment tilecount -%}</p>
               <div class="square-flip services-group wow animated zoomIn col-lg-4 col-md-4 col-sm-4 col-xs-12" style="background:none;" data-wow-offset="40">
                 <div class='square Square darken-background'  data-image="{{ imgUrl }}">

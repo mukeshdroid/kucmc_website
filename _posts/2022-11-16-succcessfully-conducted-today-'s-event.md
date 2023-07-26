@@ -2,12 +2,12 @@
 layout: post
 title: Succcessfully conducted today's event on "Mathematics on Election and Politics".
 description:   Succcessfully conducted today's event on "Mathematics on Election and Politics".  
-picture: https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/315787486_587043173422749_5749541745153676666_n.jpg?stp=dst-jpg_p600x600&_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3OVM8SkKkBoAX9nx4vY&_nc_ht=scontent.fktm20-1.fna&oh=00_AfBRodlC1uFFrFvYTXfF3qXROqmQiKJUx9arz2mSXYuMVg&oe=649120BD
+picture: postsImg/2022-11-16_2022-11-16-succcessfully-conducted-today-'s-even_0.png
 labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
 keywords: ['succcessfully', 'conducted', 'today', "'s", 'event']
 type: "post"
 author: "FB"
 
-pictures: ['https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/315787486_587043173422749_5749541745153676666_n.jpg?stp=dst-jpg_p600x600&_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3OVM8SkKkBoAX9nx4vY&_nc_ht=scontent.fktm20-1.fna&oh=00_AfBRodlC1uFFrFvYTXfF3qXROqmQiKJUx9arz2mSXYuMVg&oe=649120BD', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/315901552_587043216756078_7879350983642227658_n.jpg?stp=dst-jpg_p720x720&_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=2l5FjkE88mEAX8qw4Yg&_nc_ht=scontent.fktm20-1.fna&oh=00_AfAKzjVvCI4CcIx8WKiY8Vs9AGAt03OCe3t16mDuS_mKFw&oe=6491A777', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/315773511_587048276755572_7138603809640766546_n.jpg?stp=dst-jpg_p720x720&_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=b6XP97XX7BUAX_ZUeKY&_nc_ht=scontent.fktm20-1.fna&oh=00_AfCFRJxSnQ9q4akcZzmQkCxZe5DsRCEBVhRs6e64rwMfTQ&oe=64916DED', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/315770573_587043540089379_858709009423102215_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=myL80YOYEn4AX9Ukg09&_nc_ht=scontent.fktm20-1.fna&oh=00_AfAd6FrS56icasT6smFAnhAsQe8hOwNuydcPq4M8lN-RLQ&oe=649109EC', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/315886590_587048496755550_929453053289504311_n.jpg?stp=dst-jpg_p600x600&_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=vEgofqGAN58AX-Jn3WB&_nc_ht=scontent.fktm20-1.fna&oh=00_AfD-Fn_WCmoa200MogDlR9lm9K_pgsAG4hvhfWRN00uDLQ&oe=64908A40']
+pictures: ["postsImg/2022-11-16_2022-11-16-succcessfully-conducted-today-'s-even_0.png", "postsImg/2022-11-16_2022-11-16-succcessfully-conducted-today-'s-even_1.png", "postsImg/2022-11-16_2022-11-16-succcessfully-conducted-today-'s-even_2.png", "postsImg/2022-11-16_2022-11-16-succcessfully-conducted-today-'s-even_3.png", "postsImg/2022-11-16_2022-11-16-succcessfully-conducted-today-'s-even_4.png"]
 ---
   Succcessfully conducted today's event on "Mathematics on Election and Politics".  <br>[Read More](#){:target="_blank"}{:rel="noopener noreferrer"}

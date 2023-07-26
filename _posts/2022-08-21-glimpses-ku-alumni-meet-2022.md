@@ -2,12 +2,12 @@
 layout: post
 title: Some glimpses from KU Alumni Meet 2022 held at Kathmandu University School of Management(KUSOM) on Saturday.
 description:   Some glimpses from KU Alumni Meet 2022 held at Kathmandu University School of Management(KUSOM) on Saturday.  
-picture: https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/300183522_1074885149822540_3891532582010357544_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=MCHculx3AGwAX_2Lq4N&_nc_ht=scontent.fktm20-1.fna&oh=00_AfAvgcZ04nKlpFHDr9kIk_Gx7EVGV39wAKeQ56H9FuXBOA&oe=6491D2C1
+picture: postsImg/2022-08-21_2022-08-21-glimpses-ku-alumni-meet-202_0.png
 labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
 keywords: ['glimpses', 'ku', 'alumni', 'meet', '2022']
 type: "post"
 author: "FB"
 
-pictures: ['https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/300183522_1074885149822540_3891532582010357544_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=MCHculx3AGwAX_2Lq4N&_nc_ht=scontent.fktm20-1.fna&oh=00_AfAvgcZ04nKlpFHDr9kIk_Gx7EVGV39wAKeQ56H9FuXBOA&oe=6491D2C1', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/299491039_1074885193155869_8878762807090449771_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=vVZVjYxmaj4AX_9nDcJ&_nc_ht=scontent.fktm20-1.fna&oh=00_AfDo9BzzcbSkO2T3XhPMRSzvfAvBmNRlFPX0AK7-QOwyrg&oe=64910316', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/299786719_1074885226489199_4865297184142174530_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=f2tiPjgKkScAX_YCcOI&_nc_ht=scontent.fktm20-1.fna&oh=00_AfAAYRX2rCqSld58b1hAHw8PUIkkwe1jzwvfqq817sHblA&oe=64920D1D', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/299996416_1074885273155861_8683863065679727568_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pBTlGppFreAAX-x4OHK&_nc_ht=scontent.fktm20-1.fna&oh=00_AfD9p4b2kOus1ssgqt8OQW2QvfSbPxVPKVVPky4XMIqlng&oe=64910337', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/299146435_1074885326489189_4334894922502487750_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Lv_AkE4JftIAX-20IEo&_nc_ht=scontent.fktm20-1.fna&oh=00_AfBv09uWpJkuQp9IjAm323ou9dxwjqcHRcKhfV4B0IGwZg&oe=6490E1EC']
+pictures: ['postsImg/2022-08-21_2022-08-21-glimpses-ku-alumni-meet-202_0.png', 'postsImg/2022-08-21_2022-08-21-glimpses-ku-alumni-meet-202_1.png', 'postsImg/2022-08-21_2022-08-21-glimpses-ku-alumni-meet-202_2.png', 'postsImg/2022-08-21_2022-08-21-glimpses-ku-alumni-meet-202_3.png', 'postsImg/2022-08-21_2022-08-21-glimpses-ku-alumni-meet-202_4.png']
 ---
   Some glimpses from KU Alumni Meet 2022 held at Kathmandu University School of Management(KUSOM) on Saturday.  <br>[Read More](#){:target="_blank"}{:rel="noopener noreferrer"}

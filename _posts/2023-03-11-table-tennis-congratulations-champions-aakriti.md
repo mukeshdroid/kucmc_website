@@ -2,12 +2,12 @@
 layout: post
 title: Table Tennis Champions!
 description:   Table Tennis Champions! Aakriti K.C. and Prajanya Parakram Shrestha conquer the competition at the Table Tennis Tournament of CM Sports 2023. Congratulations to Supriya Baniya and Hritik Chaudhary for securing runner up positions.   Congratulations on your well-deserved victory!  
-picture: https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/334978268_165925549583990_8635694461542162608_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=B14z4SfpaQ8AX_sIp6h&_nc_ht=scontent.fktm20-1.fna&oh=00_AfClpFSmoJxWWfLbQ4lZfL662ngvlA3gxblreF4nSYM0cA&oe=649088D0
+picture: postsImg/2023-03-11_2023-03-11-table-tennis-congratulations-champions-aakrit_0.png
 labelclasses: ["label-default","label-primary","label-success","label-info","label-warning","label-danger"]
 keywords: ['table', 'tennis', 'congratulations', 'champions', 'aakriti']
 type: "post"
 author: "FB"
 
-pictures: ['https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/334978268_165925549583990_8635694461542162608_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=B14z4SfpaQ8AX_sIp6h&_nc_ht=scontent.fktm20-1.fna&oh=00_AfClpFSmoJxWWfLbQ4lZfL662ngvlA3gxblreF4nSYM0cA&oe=649088D0', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/334974166_1285756055372947_878618630992310888_n.jpg?stp=dst-jpg_p720x720&_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=F2uUj7oSTBUAX_9PXSv&_nc_ht=scontent.fktm20-1.fna&oh=00_AfAL1LYvPU4jsL_nPxr5h5mQcfkh6XOrI3QXsimN2wQGcA&oe=649043C1', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/333575766_171271959030360_4902638012683366471_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=I4zI2PvH-fsAX_3xVO6&_nc_ht=scontent.fktm20-1.fna&oh=00_AfBmRaFt2LJOW6H86E4ZHN3OVFZmpHAe54HblAZZUNVbpA&oe=64904040', 'https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-6/335481120_210676541629847_8053430258350439402_n.jpg?stp=dst-jpg_p720x720&_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=KpHgQ0c-zSUAX_CR9B4&_nc_ht=scontent.fktm20-1.fna&oh=00_AfCjQmKoXsCOTwctc5bJEsYHljws7z87LiWr9oelaKQL4w&oe=64906F9C']
+pictures: ['postsImg/2023-03-11_2023-03-11-table-tennis-congratulations-champions-aakrit_0.png', 'postsImg/2023-03-11_2023-03-11-table-tennis-congratulations-champions-aakrit_1.png', 'postsImg/2023-03-11_2023-03-11-table-tennis-congratulations-champions-aakrit_2.png', 'postsImg/2023-03-11_2023-03-11-table-tennis-congratulations-champions-aakrit_3.png']
 ---
   Table Tennis Champions! Aakriti K.C. and Prajanya Parakram Shrestha conquer the competition at the Table Tennis Tournament of CM Sports 2023. Congratulations to Supriya Baniya and Hritik Chaudhary for securing runner up positions.   Congratulations on your well-deserved victory!  <br>[Read More](#){:target="_blank"}{:rel="noopener noreferrer"}
